@@ -145,7 +145,6 @@ hr {
 
 @media (max-width: 1000px) {
   .lado {
-    background-color: #774360;
     flex: 30%;
   }
   .box {
