@@ -11,17 +11,15 @@ hr {
 }
 
 .btn-compro {
+  height: 5rem;
   background-color: #98ca3f;
   columns: black;
   border-radius: 10px;
   border: 0;
-  padding: 10px 20px;
+  margin-right: 7px;
   cursor: pointer;
   font-size: 2rem;
   font-weight: bold;
-  position: absolute;
-  bottom: 1rem;
-  left: 25%;
 }
 .btn-compro:hover {
   background-color: #c2db97;
@@ -37,6 +35,7 @@ hr {
   height: auto;
   margin: 5px;
 }
+
 
 .title {
   background-color: #F7ECDE;
@@ -84,6 +83,7 @@ hr {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -94,24 +94,24 @@ hr {
 
 /* -------Box---------- */
 .box {
-  flex: 20%;
-  display: block;
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: space-between;
   background-color: #A084CF;
-  margin: 10px;
-  border-radius: 7px;
-  position: relative;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  position: absolute;
+  bottom: 0;
 }
 
 .box-img {
-  width: 90%;
+  width: 3rem;
 }
 
 .box-btn {
-  position: absolute;
-  bottom: 2rem;
-  left: -1.5rem;
+  display: flex;
+  margin: 10px 0;
 }
 
 .btn {
@@ -131,12 +131,11 @@ hr {
 }
 
 .btn__box {
-  display: block;
   width: 5rem;
   height: 5rem;
   font-size: 3rem;
   border-radius: 5px;
-  margin-bottom: 5px;
+  margin-right: 7px;
   transition: all ease .3s;
 }
 

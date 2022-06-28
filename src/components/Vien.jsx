@@ -41,8 +41,8 @@ function verifySubtract (num, den, res, callback) {
 
 function Vien({ ope, setOpe }) {
   const [state, setState] = useState({
-    numerador: 3,
-    denominador: 4,
+    numerador: 4,
+    denominador: 3,
     result: 0
   })
 

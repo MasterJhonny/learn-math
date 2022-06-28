@@ -4,7 +4,7 @@ const url = 'https://i.postimg.cc/sDW4Q8NN/bolas.png'
 
 
 
-function BoxItem({ state, updateBol }) {
+function BoxItem({ state, updateBol, modalResult}) {
 
     function increment () {
         updateBol({
@@ -32,6 +32,7 @@ function BoxItem({ state, updateBol }) {
                     <button className="btn btn__box" onClick={decrement}>-</button>
                 }
                 <button className="btn btn__box" onClick={increment}>+</button>
+                <button className="btn-compro" onClick={modalResult}>Comprobar</button>
             </div>
         </div>
     );
