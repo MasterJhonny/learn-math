@@ -23,7 +23,7 @@ function App() {
     if (r === state.result) {
       swal("Buen trabajo", `El resultado es Correcto ${state.numerador} + ${state.denominador} = ${r}`, "success");
     } else {
-      swal("Good job!", `El resultado es Correcto ${state.numerador} + ${state.denominador} = ${r}, tú isiste ${state.numerador} + ${state.denominador} = ${state.result}`, "error");
+      swal("Error", `El resultado es Correcto ${state.numerador} + ${state.denominador} = ${r}, tú isiste ${state.numerador} + ${state.denominador} = ${state.result}`, "error");
     }
     setState({
       numerador: random(1, 7),

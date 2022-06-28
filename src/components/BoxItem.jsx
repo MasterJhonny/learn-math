@@ -24,7 +24,7 @@ function BoxItem({ state, updateBol }) {
         <div className="box">
             <h2 className="title">figuras</h2>
             <p>
-                <img src={url} alt="bolas" />
+                <img src={url} className="box-img" alt="bolas" />
             </p>
             <div className="box-btn">
                 {
