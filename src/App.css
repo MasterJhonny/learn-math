@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+hr {
+  height: 3px;
+  background-color: black;
+}
+
+.btn-compro {
+  background-color: #98ca3f;
+  columns: black;
+  border-radius: 10px;
+  border: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 1rem;
+  left: 40%;
+}
+.btn-compro:hover {
+  background-color: #c2db97;
+
+}
+
+
+.lado {
+  flex: 2;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  height: auto;
+  margin: 5px;
+}
+
+.title {
+  background-color: #F7ECDE;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.operacion {
+  display: flex;
+  flex-direction: column;
+}
+
+.number {
+  min-height: 120px;
+  font-size: 7rem;
+}
+
+.ope-up {
+  flex: 2;
+  position: relative;
+}
+.result {
+  flex: 1;
+}
+
+.signo {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  font-size: 5rem;
+}
+
+/* lado ----------B------- */
+.box-figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-result {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #A084CF;
+  margin: 10px;
+  border-radius: 7px;
+  position: relative;
+}
+
+.box-btn {
+  position: absolute;
+  bottom: 2rem;
+  left: -1.5rem;
+}
+
+.btn {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  background-color: #774360;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.bol {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 7px;
+  background-image: url(https://i.postimg.cc/QM09PkFD/bol.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.c {
+  background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
