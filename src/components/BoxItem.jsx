@@ -29,9 +29,9 @@ function BoxItem({ state, updateBol }) {
             <div className="box-btn">
                 {
                     state.result === 0 ? null :
-                    <button className="btn" onClick={decrement}>-</button>
+                    <button className="btn btn__box" onClick={decrement}>-</button>
                 }
-                <button className="btn" onClick={increment}>+</button>
+                <button className="btn btn__box" onClick={increment}>+</button>
             </div>
         </div>
     );

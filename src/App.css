@@ -1,4 +1,4 @@
-.App {
+.vien {
   text-align: center;
   display: flex;
   height: 100vh;
@@ -43,6 +43,15 @@ hr {
   margin: 10px;
   padding: 10px;
   border-radius: 7px;
+}
+
+.btn-ope {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .operacion {
@@ -106,17 +115,10 @@ hr {
 }
 
 .btn {
-  display: block;
-  width: 5rem;
-  height: 5rem;
   background-color: #774360;
   color: #fff;
-  font-size: 3rem;
   border: 0;
-  border-radius: 5px;
-  margin-bottom: 5px;
   cursor: pointer;
-  transition: all ease .3s;
 }
 
 .btn:hover {
@@ -126,6 +128,16 @@ hr {
 
 .btn:active {
   transform: scale(0.9);
+}
+
+.btn__box {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: all ease .3s;
 }
 
 .bol {

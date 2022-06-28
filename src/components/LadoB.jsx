@@ -6,7 +6,7 @@ import { Bol } from '../components/Bol'
 
 
 
-function LadoB({state}) {
+function LadoB({state, ope}) {
 
     const numerador = [];
     const denominador = [];
@@ -38,7 +38,7 @@ function LadoB({state}) {
                             denominador.map(item => item)
                         }
                     </p>
-                    <span className="signo">+</span>
+                    <span className="signo">{ope}</span>
                 </div>
                 <div className="result">
                     <hr />
