@@ -5,27 +5,33 @@ import { verifyAdd, verifySubtract } from '../functions/verify'
 import { LadoA } from './LadoA'
 import { LadoB } from './LadoB'
 import { BoxItem } from './BoxItem'
-
+import { BarProgres } from './BarProgres'
 
 function Vien({ ope, setOpe }) {
   const [state, setState] = useState({
     numerador: 4,
     denominador: 3,
     result: 0,
-    forma: 'redondo'
+    forma: 'redondo',
+    progress: 0
   })
 
   function modalResult () {
     if (ope === '+') {
-      verifyAdd(state.numerador, state.denominador, state.result, state.forma, setState)
+      verifyAdd(state.numerador, state.denominador, state.result, state.forma, state.progress, setState)
+     
     }
     if (ope === '-') {
-      verifySubtract(state.numerador, state.denominador, state.result, state.forma, setState)
+      verifySubtract(state.numerador, state.denominador, state.result, state.forma, state.progress, setState)
     }
   }
 
   return (
     <div className="vien">
+      <BarProgres
+        progress={state.progress}
+        updateProgress={setState}
+      />
       <LadoA 
         state={state}
         setOpe={setOpe}
