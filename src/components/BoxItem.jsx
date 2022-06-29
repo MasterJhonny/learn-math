@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 
 const url = 'https://i.postimg.cc/sDW4Q8NN/bolas.png'
 
+import { Bol } from './Bol'
 
-
-function BoxItem({ state, updateBol, modalResult}) {
+function BoxItem({ state, updateBol, modalResult, forma}) {
 
     function increment () {
         updateBol({
@@ -20,12 +20,44 @@ function BoxItem({ state, updateBol, modalResult}) {
         })
     }
 
+    function changeForma (forma) {
+        updateBol({
+            ...state,
+            forma: forma
+        })
+        swal({
+            text: `Se ha cambiado la forma a ${forma}.`,
+        });
+    }
+
     return (
         <div className="box">
-            <h2 className="title">figuras</h2>
-            <p>
-                <img src={url} className="box-img" alt="bolas" />
-            </p>
+            <div className="title figura-box">
+                <details className="btn-ope">
+                    <button className="btn" 
+                        onClick={()=> changeForma('estrella')}>
+                        <Bol forma='estrella'/>
+                    </button>
+                    <button className="btn" 
+                        onClick={() => changeForma('redondo')}>
+                        <Bol forma='redondo'/>
+                    </button>
+                    <button className="btn" 
+                        onClick={() => changeForma('cuadrado')}>
+                        <Bol forma='cuadrado'/>
+                    </button>
+                    <button className="btn" 
+                        onClick={() => changeForma('manzana')}>
+                        <Bol forma='manzana'/>
+                    </button>
+                    <button className="btn" 
+                        onClick={() => changeForma('platano')}>
+                        <Bol forma='platano'/>
+                    </button>
+                    <summary>Figura</summary>
+                </details>
+                <Bol forma={forma}/>
+            </div>
             <div className="box-btn">
                 {
                     state.result === 0 ? null :

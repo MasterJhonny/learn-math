@@ -6,21 +6,21 @@ import { Bol } from '../components/Bol'
 
 
 
-function LadoB({state, ope}) {
+function LadoB({state, ope, forma}) {
 
     const numerador = [];
     const denominador = [];
     const result = [];
 
     for (let i = 0; i < state.numerador; i++) {
-        numerador.push(<Bol key={i}/>);   
+        numerador.push(<Bol key={i} forma={forma}/>);   
     }
     for (let i = 0; i < state.denominador; i++) {
-        denominador.push(<Bol key={i}/>);   
+        denominador.push(<Bol key={i} forma={forma}/>);   
     }
     
     for (let i = 0; i < state.result; i++) {
-        result.push(<Bol key={i}/>);   
+        result.push(<Bol key={i} forma={forma}/>);   
     }
 
     return (
